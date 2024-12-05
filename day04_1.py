@@ -12,7 +12,7 @@ count = 0
 for i in range(len(input)):
     for j, val in enumerate(input[i]):
         if val == 'X':
-            if input[i][j + 1] == 'M' and input[i][j + 2] == 'A' and input[i][j + 3] == 'S': count += 1
+            if (input[i][j + 1] == 'M' and input[i][j + 2] == 'A' and input[i][j + 3] == 'S'): count += 1
             if input[i][j - 1] == 'M' and input[i][j - 2] == 'A' and input[i][j - 3] == 'S': count += 1
             if input[i + 1][j] == 'M' and input[i + 2][j] == 'A' and input[i + 3][j] == 'S': count += 1
             if input[i - 1][j] == 'M' and input[i - 2][j] == 'A' and input[i - 3][j] == 'S': count += 1
